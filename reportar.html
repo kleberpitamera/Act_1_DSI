@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reportar - Amigos de animales</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo de la empresa" width="180" height="80">
+        <h1>Sistema de Gestión de Reportes</h1>
+        <p>Formulario de registro para animales en situación de vulnerabilidad</p>
+        <nav>
+            <a href="index.html" title="Inicio de Web">Inicio</a> |
+            <a href="reportar.html" title="Ver o hacer reportes">Reportar</a> |
+            <a href="rescates.html" title="Rescates realizados">Rescates</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Reportar un Nuevo Animal Rescatado</h2>
+            <article>
+                <form>
+                    <div>
+                        <label for="titulo">Título del caso o nombre provisional:</label><br>
+                        <input type="text" id="titulo" name="titulo" required placeholder="Ej. Perrito encontrado en la vía...">
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="categoria">Categoría:</label><br>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">-- Seleccione una categoría --</option>
+                            <option value="perros">Perros</option>
+                            <option value="gatos">Gatos</option>
+                            <option value="fauna_silvestre">Fauna Silvestre</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label>Nivel de urgencia médica:</label><br>
+                        <input type="radio" id="urgencia_alta" name="urgencia" value="Alta" required>
+                        <label for="urgencia_alta">Alta</label><br>
+                        
+                        <input type="radio" id="urgencia_media" name="urgencia" value="Media">
+                        <label for="urgencia_media">Media</label><br>
+                        
+                        <input type="radio" id="urgencia_baja" name="urgencia" value="Baja">
+                        <label for="urgencia_baja">Baja</label>
+                    </div>
+                    <br>
+
+                    <div>
+                        <label for="descripcion">Descripción detallada del estado en que se encontró:</label><br>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="40" required placeholder="Describa las condiciones físicas, ubicación exacta y detalles relevantes..."></textarea>
+                    </div>
+                    <br>
+
+                    <div>
+                        <button type="submit">Enviar Reporte</button>
+                    </div>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Amigos de animales. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
